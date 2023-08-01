@@ -20,7 +20,7 @@ canvas {
 
 main {
   width: 100vw;
-  color: rgb(243, 184, 162);
+  color: rgb(255, 255, 255);
   z-index: 99;
   position: absolute;
   width: 100%;
