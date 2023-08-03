@@ -4,4 +4,3 @@ const myCanvas = new fabric.Canvas("demoCanvas", {
     backgroundColor: "white",
     isDrawingMode: true,
   });
-  
