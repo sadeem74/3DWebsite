@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index : -1;
