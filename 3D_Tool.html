@@ -23,7 +23,7 @@
 			font-size: 16px;
 			color: white;
 			text-align: center;
-			padding: 14px 16px;
+			padding: 6px 16px;
 			text-decoration: none;
 		  }
 		  
@@ -140,27 +140,27 @@ input[type=radio] {
 		margin-bottom: 0;
 		font-size: 14px;
 		line-height: 20px;
-		color: #333;
+		color: #ffffff;
 		text-align: center;
-		text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+		text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
 		vertical-align: middle;
 		cursor: pointer;
-		background-color: #f5f5f5;
-		background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
-		background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
-		background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
-		background-image: -o-linear-gradient(top,#fff,#e6e6e6);
-		background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+		background-color: rgb(65, 174, 190);
+		background-image: -moz-linear-gradient(top,rgb(65, 174, 190),rgb(65, 174, 190));
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(rgb(65, 174, 190)),to(rgb(65, 174, 190)));
+		background-image: -webkit-linear-gradient(top,rgb(65, 174, 190),rgb(65, 174, 190));
+		background-image: -o-linear-gradient(top,rgb(65, 174, 190),rgb(65, 174, 190));
+		background-image: linear-gradient(to bottom,rgb(65, 174, 190),rgb(65, 174, 190));
 		background-repeat: repeat-x;
-		border: 1px solid #ccc;
-		border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+		border: 0px solid #ccc;
+		border-color: rgb(65, 174, 190) rgb(65, 174, 190) #ffffff;
 		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 		border-bottom-color: #b3b3b300;
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
 		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0),0 1px 2px rgba(0,0,0,0.05);
 		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0),0 1px 2px rgba(0,0,0,0.05);
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 0px 0 rgba(255, 255, 255, 0),0 1px 2px rgba(0,0,0,0.05);
 	}
 
 	input[type=radio]:checked + label {
@@ -169,7 +169,7 @@ input[type=radio] {
 		-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15),0 1px 2px rgba(0,0,0,0.05);
 		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
 		box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
-			background-color:#e0e0e0;
+			background-color:rgb(50, 128, 141);
 	}
 
 	
@@ -316,27 +316,30 @@ overflow:auto
 <label for="toolslider">Slider</label>
 </td>
 
-
+<tr></tr>
 <td style="width:100px">
 <INPUT TYPE=RADIO ID="toolsolid" NAME="tools" VALUE="toolsolid" onclick='toolClicked()'>
 <label for="toolsolid">Solid</label>
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=RADIO ID="toolfacet" NAME="tools" VALUE="toolfacet" onclick='toolClicked()'>
 <label for="toolfacet">Facet</label>
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=RADIO ID="tooledge" NAME="tools" VALUE="tooledge" onclick='toolClicked()'>
 <label for="tooledge">Edge</label>
+</tr>
 </td>
-
+<tr>
 <td style="width:100px">
 <INPUT TYPE=RADIO ID="toolvertex" NAME="tools" VALUE="toolvertex" onclick='toolClicked()'>
 <label for="toolvertex">Vertex</label>
 </td>
-
+</tr>
 <td style="width:100px">
 <INPUT TYPE=RADIO ID="tooldraw" NAME="tools" VALUE="tooldraw" onclick='drawClicked()'>
 <label for="tooldraw">Draw</label>
@@ -347,53 +350,58 @@ overflow:auto
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxsolid" NAME="checkboxsolid" VALUE="checkboxsolid" ONCLICK="toolClicked()">Shade
 </td>
-
+</tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxnormals" NAME="checkboxnormals" VALUE="checkboxnormals" ONCLICK="toolClicked()">Normals
 </td>
-
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxoutlines" NAME="checkboxoutlines" VALUE="checkboxoutlines" ONCLICK="toolClicked()">Outline
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxgrid" NAME="checkboxgrid" VALUE="checkboxgrid" ONCLICK="toolClicked()">Grid
 </td>
-
+</tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxtransparent" NAME="checkboxtransparent" VALUE="checkboxtransparent" ONCLICK="toolClicked()">Clear
 </td>
-
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxtwosided" NAME="checkboxtwosided" VALUE="checkboxtwosided" ONCLICK="toolClicked()">Dual
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkbox2DWindow" NAME="checkbox2DWindow" VALUE="checkbox2DWindow" ONCLICK="toolClicked()">Edit
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxwebgl" NAME="checkboxwebgl" VALUE="checkboxwebgl" ONCLICK="glClicked()">View
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxtexture" NAME="checkboxtexture" VALUE="checkboxtexture" ONCLICK="glClicked()">Texture
 </td>
-
+</tr>
+<tr>
 <td style="width:100px">
 <INPUT TYPE=CHECKBOX ID="checkboxspecular" NAME="checkboxspecular" VALUE="checkboxspecular" ONCLICK="toolClicked()">Specular
 </td>
-
-
+</tr>
+<tr></tr>
 <td style="width:100px">
-<select id=picklistShader onChange="shaderSelected()">
+<!-- <select id=picklistShader onChange="shaderSelected()"> -->
 </td>
-
+</tr>
 
 </tr>
 
 </table>
-<BR> 
+
 <INPUT TYPE=BUTTOn ID="buttoncube" NAME="buttoncube" VALUE="Add Cube" ONCLICK="addCube()" class="btn">
 <div id="spacer"></div>
 <INPUT TYPE=BUTTOn ID="buttonshrink" NAME="buttonshrink" VALUE="Shrink" ONCLICK="shrinkSelected()" class="btn">
@@ -413,17 +421,15 @@ overflow:auto
 <INPUT TYPE=BUTTOn ID="buttondelete" NAME="buttondelete" VALUE="Delete" ONCLICK="deleteModel()" class="btn">
 <div id="spacer"></div>
 <INPUT TYPE=BUTTOn ID="buttonsource" NAME="buttonsource" VALUE="Source" ONCLICK="showSource()" class="btn">
-<BR> 
-<INPUT TYPE=BUTTOn ID="buttoninput" NAME="buttoninput" VALUE="Input" ONCLICK="inputModel()" class="btn">
+
+
 <BR> 
 <INPUT TYPE=BUTTOn ID="buttonundo" NAME="buttonundo" VALUE="Undo" ONCLICK="undo()" class="btn">
 <BR> 
 <INPUT TYPE=BUTTOn ID="buttontumble" NAME="buttontumble" VALUE="Tumble" ONCLICK="doTumble()" class="btn">
 <div id="spacer"></div>
 <INPUT TYPE=BUTTOn ID="buttonkeys" NAME="buttonkeys" VALUE="Keys" ONCLICK="showKeys()" class="btn">
-<BR> 
-<INPUT TYPE=BUTTOn ID="buttonhelp" NAME="buttonhelp" VALUE="Help" ONCLICK="showHelp()" class="btn">
-<BR> 
+
 <BR> 
   
 <div id="errorDiv"></div>
@@ -6810,7 +6816,7 @@ function startModel()
 	document.body.appendChild(canvas);
 	
 
-	canvas.style.position = 'relative';
+	canvas.style.position = 'absolute';
 	
 
 	ctx = canvas.getContext('2d');
@@ -6832,9 +6838,9 @@ function startModel()
 
 	canvas.style.backgroundColor = colorString(canvasBackgroundColor, false);
 
-	canvas.style.position = "relative";
+	canvas.style.position = "absolute";
 
-	canvas.style.border = '0.3px solid black';	
+	canvas.style.border = '0.1px solid black';	
 	
 		
 	resize();
