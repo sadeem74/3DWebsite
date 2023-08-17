@@ -1,1 +1,1 @@
-an easy environment to whoever want to be involved in the 3D designing world.
+an easy Web Server including, drawing and 3D designing platforms.
